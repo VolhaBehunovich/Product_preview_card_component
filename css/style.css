@@ -4,6 +4,7 @@
 
 :root {
     --Dark_cyan: #3c8067;
+    --Very_dark_cyan: #1a4031;
     --Cream: #f2ebe3;
     --Very_dark_blue: #1c232b;
     --Dark_grayish_blue: #6c7289;
@@ -90,7 +91,7 @@ main {
 }
 
 h1 {
-    color: black;
+    color: var(--Very_dark_blue);
     font-family: 'Fraunces', serif;
     font-weight: 700;
     margin: 13px 0;
@@ -153,6 +154,11 @@ button {
     -o-border-radius: 10px;
 }
 
+button:hover {
+    background-color: var(--Very_dark_cyan);
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     button {
         width: 295px;
@@ -173,6 +179,11 @@ button {
     padding: 0 10px 0 0;
     width: 25px;
 
+}
+
+span {
+    display: inline-block;
+    padding-bottom: 3px;
 }
 
 .attribution {
